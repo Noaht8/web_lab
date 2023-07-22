@@ -1,0 +1,57 @@
+body {
+    background-color: #EAF6F6;
+}
+hr {
+    border-style: none;
+    border-top-style: dotted ;
+    border-color: grey;
+    border-width: 5px;
+    width: 5%; 
+
+}
+
+h1, h3{
+    color: #66BFBF;
+}
+/*
+.box {
+    background-color: lightblue;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+  }
+  */
+
+  .box:hover {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-direction: reverse;
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  img {
+    --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+    --m:
+      left   var(--_i,0%) top    var(--_g),
+      bottom var(--_i,0%) left   var(--_g),
+      top    var(--_i,0%) right  var(--_g),
+      right  var(--_i,0%) bottom var(--_g);
+    -webkit-mask: var(--m);
+            mask: var(--m);
+    filter: grayscale();
+    transition: .3s linear;
+    cursor: pointer;
+  }
+  img:hover {
+    --_i: 10%;
+    filter: grayscale(0);
+  }
+  
