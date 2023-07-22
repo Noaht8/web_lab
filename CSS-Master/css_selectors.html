@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--Element Selectors -->
+    <style>
+
+        p{
+            text-align: center;
+            color: blue;
+        }
+
+        #para1 {
+            text-align: center;
+            color: blue;
+        }
+        .center {
+            text-align: center;
+            color: blue;
+        }
+        p.center {
+            text-align: center;
+            color: blue;
+        }
+        * {
+            color: green;
+            font-size: 20px;
+        }
+
+        p:after
+        {
+            content: url(/images/bullet.gif);
+        }
+    </style>
+</head>
+<body>
+<p>This style will be applied on every paragraph.</p>
+<p>And me!</p>
+<p id="para1">Hello Javatpoint.com</p>
+
+<h1 class="center">This heading is blue and center-aligned.</h1>
+<p class="center">This paragraph is blue and center-aligned.</p>
+
+<h1 class="center">This heading is not affected</h1>
+<p class="center">This paragraph is blue and center-aligned.</p>
+
+
+<h2>This is heading</h2>
+<p>This style will be applied on every paragraph.</p>
+
+
+</body>
+</html>
